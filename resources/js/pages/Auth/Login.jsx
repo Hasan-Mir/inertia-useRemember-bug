@@ -15,8 +15,6 @@ export default function Login({ status, canResetPassword }) {
     });
     const [count, setCount] = useRemember(0, "count");
 
-    console.log(count);
-
     useEffect(() => {
         return () => {
             reset("password");
